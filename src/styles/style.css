@@ -119,12 +119,24 @@ h3 {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .text-orange {
   color: var(--main-color);
 }
 
-.padding-bottom-16 {
-  padding-bottom: 16px;
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header-title {
@@ -191,4 +203,18 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
+}
+
+.block-video {
+  margin-bottom: -200px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.block-examples {
+  padding-top: 100px;
+
+  background-color: var(--main-color-dark);
 }
