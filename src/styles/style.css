@@ -15,6 +15,7 @@
 
 :root {
   --main-color: #fe8a02;
+  --main-orange-dark: #ea7600;
   --main-color-dark: #42413c;
   --white: #fff;
   --light-white: #d7ccc0;
@@ -86,7 +87,6 @@ h3 {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 
   width: 1110px;
@@ -123,8 +123,8 @@ h3 {
   justify-content: center;
 }
 
-.text-orange {
-  color: var(--main-color);
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .margin-bottom-16 {
@@ -135,8 +135,16 @@ h3 {
   padding-bottom: 30px;
 }
 
+.margin-top-40 {
+  margin-top: 40px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-orange {
+  color: var(--main-color);
 }
 
 .header-title {
@@ -188,13 +196,12 @@ h3 {
   width: 50%;
 }
 
-.text-block div:nth-child(2n+1) {
+.text-block div:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-btn {  
+.btn {
   padding: 12px 24px;
-  margin-top: 40px;
 
   background-color: var(--main-color);
 
@@ -203,6 +210,12 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
+
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--main-orange-dark);
 }
 
 .block-video {
@@ -213,8 +226,63 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.block-examples {
+.block-navigation {
   padding-top: 100px;
-
+  flex-basis: 33%;
   background-color: var(--main-color-dark);
+}
+
+.navigation-card-wrapper {
+  flex-grow: 1;
+
+  width: 30%;
+  margin-bottom: 20px;
+
+  background-color: var(--lighthing);
+}
+
+.navigation-card-title {
+  background-color: inherit;
+}
+
+.navigation-card-wrapper:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.navigation-title {
+  font-size: 52px;
+
+  color: var(--white);
+}
+
+.navigation-link-wrapper {
+  padding: 24px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation-link-wrapper:hover {
+  background-color: var(--main-color);
+}
+
+.navigation-link-wrapper:hover .card-number,
+.navigation-link-wrapper:hover .card-title,
+.navigation-link-wrapper:hover .card-text {
+  color: var(--white);
+}
+
+.card-number {
+  padding-bottom: 40px;
+
+  font-family: "Neucha", cursive;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--main-color-dark);
+}
+
+.card-text {
+  color: var(--dark);
 }
