@@ -225,21 +225,34 @@
     </main>
 
     <footer>
-        <section>
-            <form>
-                <div>
-                    <h2>Хотите узнать больше?</h2>
-                    <h2>Подпишитесь на обновления</h2>
+        <div class="wrapper flex-column justify-center">
+            <form class="d-flex bg-dark justify-beetween form text-white">
+                <div class="d-flex flex-column">
+                    <h3>Хотите узнать больше?</h3>
+                    <h3>Подпишитесь на обновления</h3>
                 </div>
-                <h3>Электронная почта</h3>
-                <input>
-                <button></button>
-                <p>Подписываясь, вы принимаете <a>правила сервиса</a></p>
+                <div class="input-block-wrapper">
+                    <p class="input-title">Электронная почта</p>
+                    <div class="d-flex">
+                        <input class="input" placeholder="Ваша электронная почта" name="email">
+                        <div class="input-btn-wrapper d-flex relative">
+                           <input class="btn input-btn" type="submit" value=""> 
+                        </div>
+                        
+                    </div>
+                    
+                    <p class="form-rules">Подписываясь, вы принимаете <a>правила сервиса</a></p>
+                </div>
+
             </form>
-            <p>© 2020 Константин Константинопольский</p>
-            <p>По материалам статьи Yash Ranadive Cognitive Biases in Programming</p>
-            <p>Курсы программирования Hexlet</p>
-        </section>
+            <div class="d-flex flex-column text-center margin-top-60 block-contacts">
+                <p class="margin-bottom-16">© 2021 Павел Лихарев</p>
+                <p class="margin-bottom-16">По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+                <p class="margin-bottom-16"><a href="http://www.ru.hexlet.io">Курсы программирования Hexlet</a></p>  
+            </div>
+
+        </div>
+
     </footer>
 </body>
 
