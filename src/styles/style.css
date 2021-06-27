@@ -226,12 +226,11 @@ h3,
 .bg-image::before {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -165px;
 
   width: 1440px;
   height: 100%;
 
-  background-color: var(--lighthing);
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
